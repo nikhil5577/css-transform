@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(201, 236, 224);
+    }
+    .main{
+        height: 700px;
+        width: 700px;
+         border: 2px solid black;
+         border-radius: 50px;
+         font-size: 30px;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         margin-left: 350px;
+         margin-top: 50px;
+         background-color: rgb(51, 250, 250);
+    }
+    .box{
+        height: 150px;
+        width: 150px;
+        border: 1px solid black;
+        margin-left: 250px;
+        margin-top: 250px;
+        box-shadow: 2px 3px 10px blue;
+        background-color: rgb(69, 226, 38);
+        border-radius: 20px;
+    }
+    label{
+        margin-left: 35px;
+        margin-top: 10px;
+    }
+    .tr:hover ~ .box{
+        transform: translate(200px,200px);
+    }
+    .sc:hover ~ .box{
+        transform: scale(2);
+    }
+    .rt:hover ~ .box{
+        transform: rotate(120deg);
+    }
+    .sk:hover ~ .box{
+        transform: skew(45deg);
+    }
+</style>
+<body>
+    <div class="main">
+        <label class="tr">TRANSFORM</label>
+        <label class="sc">SCALE</label>
+        <label class="rt">ROTATE</label>
+        <label class="sk">SKEW</label>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
